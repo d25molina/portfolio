@@ -9,9 +9,9 @@ function $$(selector, context = document) {
 // currentLink?.classList.add('current');
 let pages = [
   { url: '/', title: 'Home' },
-  { url: 'projects/', title: 'My Projects' },
-  { url: 'contact/', title: 'Contact' },
-  { url: 'resume/', title: 'My Resume' },
+  { url: '/projects/', title: 'My Projects' },
+  { url: '/contact/', title: 'Contact' },
+  { url: '/resume/', title: 'My Resume' },
   { url: 'https://github.com/d25molina', title: 'My GitHub Profile' }
 ];
 let nav = document.createElement('nav');
