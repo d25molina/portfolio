@@ -49,7 +49,7 @@ for (let p of pages) {
 const BASE_PATH =
   location.hostname === 'localhost' || location.hostname === '127.0.0.1'
     ? '/'
-    : '/website/';
+    : '/portfolio/';
 url = !url.startsWith('http') ? BASE_PATH + url : url;
 if (a.host === location.host && a.pathname === location.pathname) {
   a.classList.add('current');
