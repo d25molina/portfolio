@@ -3,10 +3,10 @@ console.log('IT’S ALIVE!');
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));}
 let pages = [
-  { url: '/', title: 'Home' },
-  { url: '/projects/', title: 'My Projects' },
-  { url: '/contact/', title: 'Contact' },
-  { url: '/resume/', title: 'My Resume' },
+  { url: '', title: 'Home' },
+  { url: 'projects/', title: 'My Projects' },
+  { url: 'contact/', title: 'Contact' },
+  { url: 'resume/', title: 'My Resume' },
   { url: 'https://github.com/d25molina', title: 'My GitHub Profile' }
 ];
 let nav = document.createElement('nav');
@@ -46,7 +46,7 @@ const BASE_PATH =
     ? '/'
     : '/portfolio/';
 url = !url.startsWith('http') ? BASE_PATH + url : url;
-if (a.host === location.host && a.pathname === location.pathname) {
+if (a.host === location.host && a.pathname === location.pathname.endsWith(a.pathname)) {
   a.classList.add('current');
 }
 const navLinks = document.querySelectorAll("nav a");
