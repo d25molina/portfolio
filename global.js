@@ -21,42 +21,36 @@ document.body.insertAdjacentHTML(
   `
 	<label class="color-scheme">
 		Theme:
-		<select id="theme-select">
+		<select>
         <option value="light dark">Automatic</option>
         <option value="light">Light</option>
         <option value="dark">Dark</option>
 		</select>
 	</label>`,
-)
-;
-const select = document.querySelector("label.color-scheme select")
+);
+
+const select = document.querySelector("label.color-scheme select");
 if (localStorage.colorScheme) {
   document.documentElement.style.colorScheme = localStorage.colorScheme;
   select.value = localStorage.colorScheme;
 }
 select.addEventListener('input', function (event) {
   document.documentElement.style.setProperty('color-scheme', event.target.value);
-  localStorage.colorScheme = event.target.value
+  localStorage.colorScheme = event.target.value;
 });
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
-
 for (let p of pages) {
   let url = p.url;
   let title = p.title;
+  url = !url.startsWith('http') ? BASE_PATH + url : url;
   let a = document.createElement('a');
   a.href = url;
   a.textContent = title;
   nav.append(a);
-  url = !url.startsWith('http') ? BASE_PATH + url : url;
   if (a.host === location.host && a.pathname === location.pathname) {
-    a.classList.add('current');
+  a.classList.add('current');}
+  if (a.host !== location.host) {a.target = "_blank"}
 }
-    const navLinks = document.querySelectorAll("nav a");
-    navLinks.forEach(a => {
-        if (a.host && a.host !== location.host) {
-            a.target = "_blank";
-}
-})};
