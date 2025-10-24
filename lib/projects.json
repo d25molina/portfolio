@@ -1,0 +1,74 @@
+[
+    {
+        "title": "DSC209R Project 2: Persuasive/Deceptive Visualization",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate, commodi neque eos illum distinctio mollitia natus consequatur reiciendis minus tempora officiis inventore ducimus cumque qui ratione rerum sit sunt."
+    },
+    {
+        "title": "DSC209R Project 1: Expository Visualization",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "We are presented with a dataset of over 50,000 food items sold by Walmart, Target, and Whole Foods. These food items contained detailed information, including their degree of processing and nutritional content. The food that is stocked by each of these stores, as well as their price, influences the purchases made by consumers. This concept drove my inspiration and motivation for the takeaway I want my audience to understand: some food items are more accessible than others, in more ways than one."
+    },
+    {
+        "title": "DSC232R Project: Classification of Dermatoscopic Images",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "This is my project for my UCSD DSC232R course, being done in the Spring 2025 quarter. This project deals with images of skin lesions and attempts to accurately classify which images contain malignant skin lesions (i.e. melanoma) and which images contain benign skin lesions (i.e. nevus, seborrheic keratosis). <a href='https://github.com/d25molina/DSC232R_DFMProject' target='_blank'>Project</a>"
+    },
+    {
+        "title": "DSC207R Final Project: Working with Baseball Data",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "For my final project in DSC207R, I decided to work with baseball data, specifically data from Major League Baseball (MLB). Baseball is a sport that is rich in statistics and data, making it a great candidate for data visualization. My goal for this project was to create visualizations that would help to tell a story about the game of baseball and its players. <a href='https://colab.research.google.com/drive/1DuCCilbtRHmH4Rzk3Qc5RvkBjb2o2oDi?usp=sharing' target='_blank'>Project</a>"
+    },
+    {
+        "title": "Animi labore magnam aperiam?",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Suscipit voluptas ipsum dolores voluptate deserunt voluptatibus rerum quidem quam praesentium deleniti, numquam consequuntur possimus ad, exercitationem obcaecati ipsam neque ex labore aperiam doloribus ullam nostrum? Laboriosam corrupti quidem facere."
+    },
+    {
+        "title": "Qui perferendis asperiores possimus.",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ea dolore doloremque laudantium, corrupti repudiandae, quam autem reiciendis voluptatum odit blanditiis aspernatur consectetur ex rem. Quasi eius, magni eveniet ullam placeat eum laboriosam consequatur praesentium aperiam dignissimos, totam culpa."
+    },
+    {
+        "title": "Ex harum enim nobis?",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Sit rerum cupiditate eos mollitia veritatis quia deleniti voluptate perspiciatis earum! Delectus cum ipsa libero, dolores harum, molestias excepturi quis repellendus magnam in deserunt saepe eius quaerat placeat nulla at."
+    },
+    {
+        "title": "Architecto quasi temporibus pariatur.",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quae et aliquid dicta, repellendus deserunt, reiciendis repudiandae quis a, nam ullam aperiam aut. Sapiente expedita est aliquam asperiores sequi aliquid deleniti magni amet dolor tenetur, veniam consectetur neque nihil."
+    },
+    {
+        "title": "Cupiditate cumque aperiam reprehenderit.",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Eos voluptatibus assumenda odit maiores nesciunt nobis suscipit porro odio quisquam ipsum, vel earum, omnis corporis similique fuga. Eveniet sapiente deleniti facilis consequatur asperiores aliquam blanditiis accusamus natus in repellat."    
+    },
+    {
+        "title": "Nulla dicta quisquam ea?",
+        "year": 2022,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quisquam perspiciatis dolor, quae distinctio, non eaque amet eum sit magnam consectetur delectus minima natus error vero aut ipsa molestias repudiandae doloremque qui maiores laudantium. Expedita modi illum doloremque earum."
+    },
+    {
+        "title": "Dolor, qui. Esse, debitis.",
+        "year": 2022,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Enim saepe recusandae ipsam exercitationem accusantium molestias rerum iusto ab provident impedit dolor nesciunt, quos facilis doloribus ipsum fugit necessitatibus dolorem non? Amet adipisci sit odit, tempore consectetur explicabo ex."
+    },
+    {
+        "title": "Dignissimos adipisci aperiam quos!",
+        "year": 2022,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ea rem labore similique velit neque voluptatem dolorem maiores cupiditate ratione provident non qui earum tempore quisquam ut sint nesciunt quasi ipsum error deserunt fugiat vitae, soluta impedit dolor? Deserunt."
+    }
+]
