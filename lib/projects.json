@@ -3,7 +3,7 @@
         "title": "DSC209R Project 2: Persuasive/Deceptive Visualization",
         "year": 2025,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate, commodi neque eos illum distinctio mollitia natus consequatur reiciendis minus tempora officiis inventore ducimus cumque qui ratione rerum sit sunt. <a href='projects/project2/project2_report.html' target='_blank'>Project</a>"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate, commodi neque eos illum distinctio mollitia natus consequatur reiciendis minus tempora officiis inventore ducimus cumque qui ratione rerum sit sunt. <a href='../projects/project2/project2_report.html' target='_blank'>Project</a>"
     },
     {
         "title": "DSC209R Project 1: Expository Visualization",
