@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 2 Report</title>
+    <style>
+      :root {
+        --color-neutral-95: hsl(220 10% 95%);
+        --color-neutral-90: hsl(220 10% 90%);
+        --color-neutral-80: hsl(220 10% 80%);
+        --color-neutral-70: hsl(220 10% 70%);
+        --color-neutral-60: hsl(220 10% 60%);
+        --color-neutral-50: hsl(220 10% 50%);
+        --color-neutral-40: hsl(220 10% 40%);
+        --color-neutral-30: hsl(220 10% 30%);
+        --color-neutral-20: hsl(220 10% 20%);
+        --color-neutral-10: hsl(220 10% 10%);
+      }
+
+      html {
+        font: 100%/1.5 system-ui;
+        counter-reset: figure;
+        background: var(--color-neutral-95);
+        max-width: min(75vw, 80em);
+        margin: 0 auto;
+      }
+
+      /* Headings */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        line-height: 1.1;
+        font-weight: 600;
+        text-wrap: balance;
+      }
+
+      h1,
+      h2 {
+        border-bottom: 1px solid var(--color-neutral-80);
+        padding-bottom: 0.2em;
+      }
+
+      h1 {
+        margin-block: 1em 0.5rem;
+        font-size: clamp(2.5em, 150% + 2vh + 2vw, 10vmin);
+        font-weight: 800;
+
+        small {
+          display: block;
+          width: fit-content;
+          padding: 0.2em 0.5em;
+          margin-inline: auto;
+          color: white;
+          background: var(--color-neutral-40);
+          font-size: 40%;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+      }
+
+      h2 {
+        font-size: 180%;
+        color: var(--color-neutral-30);
+      }
+
+      h3 {
+        font-size: 130%;
+      }
+
+      /* Lists */
+
+      ul,
+      ol {
+        padding-inline-start: 2em;
+      }
+
+      li {
+        &::marker {
+          color: var(--color-neutral-40);
+        }
+
+        + li {
+          margin-top: 0.2em;
+        }
+      }
+
+      /* Sectioning elements */
+
+      header {
+        padding-block: 1em;
+        text-align: center;
+      }
+
+      main {
+        background: white;
+        color: var(--color-neutral-20);
+        border-radius: 1rem;
+        padding: 0.1rem 2rem;
+      }
+
+      /* Figures */
+
+      figure {
+        margin: 1em 0;
+        padding: 0.5rem;
+        margin-inline: -0.5em;
+        border: 1px solid var(--color-neutral-80);
+        box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
+        text-align: center;
+        background: white;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        > figcaption {
+          font: 500 75% var(--font-sans);
+          background: var(--color-neutral-95);
+          padding: 0.5rem;
+          margin: -0.5rem;
+          margin-top: 0.5rem;
+          counter-increment: figure;
+          text-align: left;
+
+          &::before {
+            content: 'Figure ' counter(figure) ': ';
+            font-weight: bold;
+            color: var(--color-neutral-40);
+          }
+
+          a:not(:hover, :focus, :active) {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: color-mix(
+              in lab,
+              currentColor,
+              transparent 70%
+            );
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <small>Project 2</small>
+        Persuasive or Deceptive Visualization?
+      </h1>
+
+      <p><strong>Dimas Molina</strong> — <em>d2molina@ucsd.edu</em></p>
+    </header>
+
+    <main>
+      <h2>Proposition: Changes in the number of abortion clinics are associated with corresponding changes in the number of abortions.</h2>
+
+      <section>
+        <h3>FOR the Proposition</h3>
+
+        <figure>
+          <img src="/images/P2_Pro.png" alt="The image supporting my proposition." />
+          <figcaption>Scatterplot demonstrating a positive correlation between the number of abortion clinics and number of abortions</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li><b>Line of Best Fit:</b> This design aspect serves the purpose of illustrating the trend between the proportional change in the number of abortion clinics and the proportional change in the number of abortions between 2017 and 2020. Furthermore, it supports the proposition by demonstrating that as the number of available abortion clinics increases/decreases, the number of abortions follows the same trend. The only flaw with the line of best fit is how much influence the outliers could have had in its construction.<br>(Deception Score: 1)</li>
+          <li><b>Removal of the X and Y axes:</b> This design aspect will distract the reader from identifying which points potentially go against the proposition. The audience will need to have a second look to realize the bottom left corner is not the origin. Instead, the reader's attention will immediately go to the trend set forth by the points and the line of best fit instead of points that may not follow the proposition. The setback that comes with eliminating the axes is quantifying the strength of the rate of change between the two variables, as it is not immediately apparent. The only aspect of that trend that is apparent is the positive correlation among the two variables.<br>(Deception Score: -1)</li>
+          <li><b>Binning the dots into bins of responsiveness:</b> I decided to calculate an elasticity index and implement binning for readers to get a second layer of persuasion in the visualization. In order to calculate my measure of elasticity, I filtered the dataframe to only include states that had any non-zero value for the percent change in the number of abortion clinics. This decision was made to reflect states in which there was a change to account for in the visualization. Binning will demonstrate that the majority of the points follow the proposition and it will also demonstrate the level of how strong that association is. Although counterintuitive, this does maintain integrity by displaying an "inverse" bin for points that may not align with the proposition.<br>(Deception Score: 2)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>AGAINST the Proposition</h3>
+
+        <figure>
+          <img src="/images/P2_Con.png" alt="The image refuting my proposition." />
+          <figcaption>Horizontal bar chart demonstrating the changes between number of abortion clinics did not universally correspond with the number of abortions.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li><b>Gap Calculation:</b> Rather than plotting raw changes in abortion rates and clinic numbers separately, I created a new variable representing the gap between the two. This transformation captures how much abortion rates changed relative to clinic availability, making inconsistencies more visible and easier to compare across states. This decision strengthens the persuasiveness of the visualization by simplifying the relationship between the two variables into a single measure that directly supports the claim that clinic availability does not neatly explain abortion rate changes. While this approach is statistically fair, it also frames the narrative in a way that emphasizes independence rather than correlation. I considered plotting the two measures side-by-side but found the gap transformation more effective in communicating the intended message.<br>(Deception Score: 1)</li>
+          <li><b>Blue-Orange Color Scheme:</b> To visually distinguish states where abortion rate changes exceeded or fell below clinic changes, I used a diverging color scale—blue for negative gaps and orange for positive ones. This decision highlights the imbalance between the two variables, reinforcing the argument that trends move in opposite directions across many states. The color contrast draws the viewer’s attention to this inconsistency immediately, increasing the visualization’s persuasive impact. While the color scheme is colorblind-friendly and intuitive, it does risk exaggerating differences by visually polarizing states that might have small gaps. I considered using a neutral single-color scale, but it made the overall message much less apparent.<br>(Deception Score: 1)</li>
+          <li><b>Sorting States by Magnitude of Gaps:</b> I sorted states based on the size of their gap values rather than alphabetically or geographically. This layout intentionally emphasizes the states with the largest positive and negative differences, visually amplifying the apparent disorder in the data. This choice strengthens the argument that there is “no clear link” between clinic availability and abortion rates by making the inconsistency across states feel more pronounced. However, it can also be misleading, since sorting obscures potential regional or contextual patterns that could have provided nuance.<br>(Deception Score: -1)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Final Reflection</h2>
+
+        <p>In this project, I was presented with abortion data and was tasked with not only asserting a proposition, but also constructing two visualizations – one that would persuade the audience of my proposition and one that would refute it. When first inspecting the dataset, it became apparent to me that I was working with temporal data. This motivated not only my proposition, but also the design process for my visualizations. Furthermore, the central idea for this project focused on investigating changes in the number of abortion clinics being associated with corresponding changes in the number of abortions.</p>
+        <p>When brainstorming ideas for the two visualizations, it was straightforward to build upon the trends found within the data and analyze patterns from the various states that demonstrated any change over time. However, it quickly became clear that even small design decisions, such as which variables to emphasize or how to order the data, could dramatically shift how the audience interprets the same underlying information. Constructing the “pro” visualization, for example, felt methodical: I used a scatterplot with a regression line and a color-coded measure of responsiveness to emphasize a positive relationship between clinic availability and abortion rates. It was interesting to see how a clean upward trend and color binning could complement each other and visually support the proposition. The “con” visualization, in contrast, proved more creatively challenging but also more revealing. Designing it required me to transform the data in a way that subtly shifted focus without distorting facts. By introducing the “gap” metric, the difference between abortion rate change and clinic change, I could emphasize inconsistencies between the two measures. Sorting states by their gap values and using a diverging color scheme further amplified the sense of disorder, making the lack of alignment appear more dramatic.</p>
+        <p>Through this process, I learned that ethical analysis and visualization begins with a guiding idea that shapes the direction of one’s analysis, but that idea must never override the integrity of the data itself. In this project, because I was dealing with politically charged abortion data, I recognized the heightened responsibility to maintain transparency and fairness in my design choices. I ensured that every transformation or derived measure, such as the “gap” metric, was a legitimate analytical tool rather than a distortion. The metric reflected a real discrepancy in the data, not an artificial exaggeration. I also drew a clear boundary between persuasive yet ethical visualization choices, like highlighting relevant patterns with color or ordering, and misleading ones, such as manipulating axes or omitting contextual information. For instance, I was careful to maintain consistent scales and clear labeling so the audience could accurately interpret changes over time. Ultimately, this project taught me that persuasion in visualization is acceptable when it amplifies truth, but unethical when it obscures it.</p>
+      </section>
+    </main>
+  </body>
+</html>
