@@ -70,7 +70,6 @@ export async function fetchJSON(url) {
     console.error('Error fetching or parsing JSON data:', error);
   }
 }
-//fetchJSON('../lib/projects.json')
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   // write javascript that will allow dynamic heading levels based on previous function
@@ -80,7 +79,8 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
       <img src="${project.image}" alt="${project.title}">
-      <p>${project.description}</p>`;
+      <p>${project.description}</p>
+      <p class="project-year">${project.year}</p>`;
     containerElement.appendChild(article);
   });
 }
