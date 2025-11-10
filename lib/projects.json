@@ -1,5 +1,17 @@
 [
     {
+        "title": "DSC209R Lab 7: Geospatial Visualization Project",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "In this project, we created an interactive geospatial visualization using D3.js to explore Boston bike traffic data. You can see my project here: <a href='https://d25molina.github.io/Boston_bikeTraffic/' target='_blank'>Project</a>"
+    },
+    {
+        "title": "DSC209R Project 3: Interactive Visualization on Gas Emissions",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Alongside Matt Zidell and Jacob Sease, we created an interactive visualization that explores how gas emissions vary by region, gas types, and different time intervals. You can see our project here: <a href='https://mattzid.github.io/DSC_209_P3/' target='_blank'>Project</a>"
+    },
+    {
         "title": "DSC209R Project 2: Persuasive/Deceptive Visualization",
         "year": 2025,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
@@ -22,18 +34,6 @@
         "year": 2024,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "For my final project in DSC207R, I decided to work with baseball data, specifically data from Major League Baseball (MLB). Baseball is a sport that is rich in statistics and data, making it a great candidate for data visualization. My goal for this project was to create visualizations that would help to tell a story about the game of baseball and its players. <a href='https://colab.research.google.com/drive/1DuCCilbtRHmH4Rzk3Qc5RvkBjb2o2oDi?usp=sharing' target='_blank'>Project</a>"
-    },
-    {
-        "title": "Animi labore magnam aperiam?",
-        "year": 2023,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Suscipit voluptas ipsum dolores voluptate deserunt voluptatibus rerum quidem quam praesentium deleniti, numquam consequuntur possimus ad, exercitationem obcaecati ipsam neque ex labore aperiam doloribus ullam nostrum? Laboriosam corrupti quidem facere."
-    },
-    {
-        "title": "Qui perferendis asperiores possimus.",
-        "year": 2023,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ea dolore doloremque laudantium, corrupti repudiandae, quam autem reiciendis voluptatum odit blanditiis aspernatur consectetur ex rem. Quasi eius, magni eveniet ullam placeat eum laboriosam consequatur praesentium aperiam dignissimos, totam culpa."
     },
     {
         "title": "Ex harum enim nobis?",
