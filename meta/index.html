@@ -10,9 +10,16 @@
     <h1>Meta Information</h1>
     <p>This is the meta page.</p>
     <div id="stats"></div>
+    <label>Commit Progress:
+      <input type ="range" min ="0" max ="100" id ="commit-progress">
+      <time id ="commit-time"></time>
+    </label>
+  <div id="scrolly-1">
+    <div id = "scatter-story"><h2>My Commit Story</h2></div>
+    <div id = "scatter-plot">
     <h2>Commits by time of day</h2>
     <div id="chart"></div>
-  <dl id="commit-tooltip" class="info tooltip" hidden>
+    <dl id="commit-tooltip" class="info tooltip" hidden>
     <dt>Commit</dt>
     <dd>
       <a href="" id="commit-link" target="_blank"></a>
@@ -29,11 +36,15 @@
 
     <dt>Lines edited</dt>
     <dd id="commit-lines-edited"></dd>
-
-  <!-- Add: Time, author, lines edited -->
-</dl>
-<p id="selection-count">No commits selected</p>
-<dl id="language-breakdown" class="stats"></dl>
+    </dl>
+    <p id="selection-count">No commits selected</p>
+    <dl id="language-breakdown" class="stats"></dl>
+    </div>
+  </div>
+  <dl id="files"></dl>
+    <dd>
+      <div class="line"></div>
+    </dd>
 </body>
 <script type="module" src="../global.js" defer></script>
 <script type="module" src="main.js" defer></script>
